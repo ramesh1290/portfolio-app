@@ -29,7 +29,7 @@ const Projects = () => {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const res = await axios.get("https://portfolio-app-2-3emc.onrender.com/api/projects/");
+        const res = await axios.get("https://portfolio-app-backend-gedo.onrender.com/api/projects/");
         setProjects(res.data);
       } catch (err) {
         console.error("Error fetching projects:", err);
