@@ -20,7 +20,7 @@ const Skills = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8000/api/skills/")
+      .get("https://portfolio-app-2-3emc.onrender.com/api/skills/")
       .then((res) => setSkills(res.data))
       .catch((err) => console.log(err));
   }, []);
