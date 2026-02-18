@@ -24,7 +24,7 @@ const About = () => {
   useEffect(() => {
     const fetchAbout = async () => {
       try {
-        const res = await axios.get("http://localhost:8000/api/about/");
+        const res = await axios.get("https://portfolio-app-2-3emc.onrender.com/api/about/");
         if (res.data.length > 0) setAbout(res.data[0]);
       } catch (error) {
         console.error("Error fetching about data:", error);

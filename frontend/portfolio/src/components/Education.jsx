@@ -23,7 +23,7 @@ const Education = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8000/api/education/")
+      .get("https://portfolio-app-2-3emc.onrender.com/api/education/")
       .then((res) => setEducation(res.data))
       .catch((err) => console.log(err));
   }, []);

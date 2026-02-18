@@ -17,7 +17,7 @@ const Testimonials = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8000/api/testimonials/")
+      .get("https://portfolio-app-2-3emc.onrender.com/api/testimonials/")
       .then((res) => setTestimonials(res.data))
       .catch((err) => console.log(err));
   }, []);
